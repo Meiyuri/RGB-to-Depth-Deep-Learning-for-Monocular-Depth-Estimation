@@ -12,12 +12,9 @@
 ### 2. Preprocessing
 - Input Dimensions: RGB images (256 × 320)
 - Resize:
-+ RGB: bilinear interpolation
-+ Depth: nearest neighbor interpolation
-- Depth Processing:
-+ Clipping Depth: Max 80m (KITTI benchmark)
-+ Inverse Depth transformation (d = 1 / d)
-+ Min-max scaling to [0, 1]
+  + RGB: bilinear interpolation
+  + Depth: nearest neighbor interpolation
+- Depth Processing: Clipping Depth, Inverse Depth transformation (d = 1 / d), Min-max scaling to [0, 1]
 
 ## II. Build Deep Learning Model
 ### 1. Training Environment
