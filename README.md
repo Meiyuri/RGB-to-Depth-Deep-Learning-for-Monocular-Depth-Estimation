@@ -10,12 +10,16 @@
   + Visualization: matplotlib, opencv
   + Preprocessing: numpy, PIL, opencv
 ### 2. Preprocessing
+- Dataset: DIODE (selected scenes)
+  + Train: scene_00000, 00001, 00002, 00010, 00011
+  + Val: scene_00004 (indoor), scene_00008 (outdoor)
+  + Test: scene_00003 (indoor), scene_00007, 00009 (outdoor)
 - Input Dimensions: RGB images (256 × 320)
 - Resize:
   + RGB: bilinear interpolation
   + Depth: nearest neighbor interpolation
 - Depth Processing:
-  + Clipping Depth: Max 80m (KITTI benmark)
+  + Clipping Depth: Max 80m 
   + Inverse Depth transformation (d = 1 / d)
   + Min-max scaling to [0, 1]
 
