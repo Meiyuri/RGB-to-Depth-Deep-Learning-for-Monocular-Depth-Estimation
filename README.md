@@ -6,8 +6,10 @@
 ### 1. Training Environment
 - Language: Python 3.11.9
 - IDE/Interface: Google Colab
-- Environment: Google Colab connected to a local runtime (Virtual Machine)
-- Hardware Specifications: GPU: 1x NVIDIA RTX 5060 Ti (16GB VRAM)
+- Environment: Google Colab connected to a remote runtime (Virtual Machine)
+- Hardware Specifications:
+  + GPU: 1x NVIDIA RTX 5060 Ti (16GB VRAM)
+  + Setup: Local tunneling via Colab (to leverage high-end remote hardware)
 - Core Libraries:
   + Deep Learning Framework: torch, torchvision, timm
   + Data Augmentation: albumentation
