@@ -1,6 +1,7 @@
 # RGB-to-Depth-Deep-Learning-for-Monocular-Depth-Estimation
 ## I. Project Overview
 This research focuses on monocular depth estimation using the DIODE Dataset, transitioning from CNN-based ResNet to *Swin-Transformers*. The architecture utilizes a **Dual-head** design, using the `is_indoor` flag to separate indoor/outdoor supervision for improved accuracy and reduced computational cost
+>🔗[Pretrained Model (.onnx)](https://drive.google.com/drive/folders/1j0ZphIGvUC1EFjFhOrcYs6Nlg45xgDge?usp=sharing) 
 ## II. Environment
 - Language: Python 3.11.9
 - IDE/Interface: Google Colab
@@ -9,11 +10,11 @@ This research focuses on monocular depth estimation using the DIODE Dataset, tra
   + GPU: 1x NVIDIA RTX 5060 Ti (16GB VRAM)
   + Setup: Local tunneling via Colab (to leverage high-end remote hardware)
 - Core Libraries:
-  + Deep Learning Framework: torch, torchvision, timm
-  + Preprocessing: numpy, PIL, opencv
-  + Data Augmentation: albumentation
-  + Visualization: matplotlib, opencv
-  + Deployment: torch.onnx
+  + Deep Learning Framework: `torch`, `torchvision`, `timm`
+  + Preprocessing: `numpy`, `PIL`, `opencv`
+  + Data Augmentation: `albumentation`
+  + Visualization: `matplotlib`, `opencv`
+  + Deployment: `torch.onnx`
 
 ## III. Preprocessing 
 - Dataset: DIODE (selected scenes)
@@ -26,7 +27,7 @@ This research focuses on monocular depth estimation using the DIODE Dataset, tra
   + Depth: nearest neighbor interpolation
 - Depth Processing:
   + Clipping Depth: Max 80m 
-  + Inverse Depth transformation (d = 1 / d)
+  + Inverse Depth transformation ($d = \frac{1}{d}$)
   + Min-max scaling to [0, 1]
 
 ## IV. Model Architectures
