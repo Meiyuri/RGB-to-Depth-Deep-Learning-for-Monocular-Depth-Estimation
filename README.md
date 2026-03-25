@@ -14,7 +14,10 @@
 - Resize:
   + RGB: bilinear interpolation
   + Depth: nearest neighbor interpolation
-- Depth Processing: Clipping Depth, Inverse Depth transformation (d = 1 / d), Min-max scaling to [0, 1]
+- Depth Processing:
+  + Clipping Depth: Max 80m (KITTI benmark)
+  + Inverse Depth transformation (d = 1 / d)
+  + Min-max scaling to [0, 1]
 
 ## II. Build Deep Learning Model
 ### 1. Training Environment
